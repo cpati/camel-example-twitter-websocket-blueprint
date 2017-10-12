@@ -1,0 +1,4 @@
+com\backBenchers\twitter\TwitterAPIConfig.class
+com\backBenchers\twitter\TwitterAPIBean.class
+com\backBenchers\twitter\TwitterAPIPostTweetBean.class
+com\backBenchers\twitter\TwitterAPIGeoBean.class

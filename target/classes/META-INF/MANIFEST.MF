@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1507682259465
+Build-Jdk: 1.8.0_144
+Built-By: shukl
+Bundle-Blueprint: OSGI-INF/blueprint/camel-twitter.xml
+Bundle-Description: An example that pushes new tweets to a web page usin
+ g web-socket
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: camel-example-twitter-websocket-blueprint
+Bundle-SymbolicName: camel-example-twitter-websocket-blueprint
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 2.18.5
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.backBenchers.twitter;version="2.18.5",webapp;version
+ ="2.18.5"
+Implementation-Title: Camel :: Example :: Twitter WebSocket using OSGi B
+ lueprint
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache.camel
+Implementation-Version: 2.18.5
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)",org.s
+ lf4j;version="[1.7,2)",twitter4j,twitter4j.auth
+Karaf-Info: Camel;camel-example-twitter-websocket-blueprint=2.18.5
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Specification-Title: Camel :: Example :: Twitter WebSocket using OSGi Bl
+ ueprint
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 2.18.5
+Tool: Bnd-3.2.0.201605172007

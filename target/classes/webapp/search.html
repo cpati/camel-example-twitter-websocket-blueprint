@@ -1,0 +1,86 @@
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<html>
+
+<head>
+  <title>Welcome to twitter app by Backbenchers - Search Tweet</title>
+  <script type='text/javascript'>
+
+    if (!window.WebSocket) {
+      alert("WebSocket not supported by this browser");
+    }
+    
+    function search() {
+    	var phrase = document.getElementById("phrase").value;
+    	
+    	var ws = new WebSocket("ws://localhost:9090/search-tweet");
+			
+        ws.onopen = function()
+        {
+           // Web Socket is connected, send data using send()
+           ws.send(phrase);
+           console.log("search phrase sent");
+        };
+        
+        ws.onmessage = function (evt) 
+        { 
+           var received_msg = evt.data;
+           document.getElementById("result").value=received_msg;
+           console.log("Message is received..."+received_msg);
+        };
+	
+
+    }
+
+   
+
+  </script>
+  <style type='text/css'>
+    div {
+      border: 0px solid black;
+    }
+
+    div#chat {
+      clear: both;
+      width: 80em;
+      height: 60ex;
+      overflow: auto;
+      background-color: #f0f0f0;
+      padding: 4px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+<p><h1>Search a tweet</h1>
+<p/>
+<form>
+	<input type="text" id="phrase"/>
+	<button type="button" onclick="search()">Search!</button>
+	<br/>
+	<h4>Search Result</h4>
+	<textarea rows="10" cols="50" id="result" readonly>
+		
+	</textarea>
+	
+</form>
+<a href="index.html">Back to main menu</a>
+</body>
+
+</html>

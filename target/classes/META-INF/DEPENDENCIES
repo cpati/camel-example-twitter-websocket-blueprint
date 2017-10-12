@@ -1,0 +1,47 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Camel :: Example :: Twitter WebSocket using OSGi Blueprint
+
+
+From: 'an unknown organization'
+  - twitter4j-core (http://twitter4j.org/) org.twitter4j:twitter4j-core:jar:4.0.6
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - twitter4j-stream (http://twitter4j.org/) org.twitter4j:twitter4j-stream:jar:4.0.6
+    License: Apache License 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - Apache Log4j API (http://logging.apache.org/log4j/2.x/log4j-api/) org.apache.logging.log4j:log4j-api:jar:2.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j Core (http://logging.apache.org/log4j/2.x/log4j-core/) org.apache.logging.log4j:log4j-core:jar:2.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - HttpClient (base module) (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpclient:jar:4.0-alpha4
+    License: Apache License  (../LICENSE.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - Old JAXB Core (http://jaxb.java.net/jaxb-bundles/jaxb-core) com.sun.xml.bind:jaxb-core:jar:2.2.11
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - Old JAXB Runtime (http://jaxb.java.net/jaxb-bundles/jaxb-impl) com.sun.xml.bind:jaxb-impl:jar:2.2.11
+    License: CDDL+GPL License  (http://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.7
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons Codec (http://commons.apache.org/proper/commons-codec/) commons-codec:commons-codec:jar:1.10
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons IO (http://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache HttpCore (http://hc.apache.org/httpcomponents-core-ga) org.apache.httpcomponents:httpcore:jar:4.4.4
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+
